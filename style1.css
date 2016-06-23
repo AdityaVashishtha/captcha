@@ -1,0 +1,64 @@
+		div {
+			background: rgb(150,150,100);
+			margin: 10px;
+			padding: 10px;
+			width: 700px;
+		}
+		.nor {
+			background-color: #1115bb;
+			width: 250px;
+			padding: 10px;
+			margin: 10px;			
+		}
+		.rela {
+			background-color: #fff5bb;
+			width: 250px;
+			padding: 10px;
+			position: relative;
+			left: 10%;
+		}
+		.fixed {
+			background-color: #aaf5bb;
+			width: 250px;
+			padding: 10px;
+			position: fixed;
+			left: 50%;
+			animation: mymove 1s;
+			box-shadow: 1px 1px 1px 1px gray;
+		}
+		.abso {
+			width: 350px;
+			height: 350px;
+			overflow: hidden;
+			position: absolute;
+			top: 30%;
+			left: 10%;
+			animation: mymove 5s;
+			box-shadow: 5px 5px 10px 0px lightgreen;
+			border:20px solid lightgreen;
+			border-left: 20px solid green;
+			border-right: 20px solid green;
+			border-radius: 25em;
+			border-top-left-radius: 1em;
+			transform: rotate(45deg);
+		}
+		@keyframes mymove{
+			to {
+				background-color: #fff;
+				box-shadow: 5px 5px 10px 0px lightgreen;
+				border-radius: 25em;
+				border-top-left-radius: 0em;
+				transform: rotate(45deg);
+			}
+			from {
+				background-color: #aa15db;
+				border-radius: 5em;
+				transform: rotate(145deg);
+			}
+		}
+		.absot {
+			width: 50px;
+			position: absolute;
+			left: 80%;
+			top: -10px;
+		}
